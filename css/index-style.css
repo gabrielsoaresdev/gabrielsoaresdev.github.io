@@ -1,0 +1,80 @@
+#section-home {
+    background-image: url("../img.jpg");
+}
+
+.full-fixed-background {
+    height: 100vh;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#div-apresentacao {
+    position: absolute;
+    bottom: 0px;
+    right: 3%;
+    font-size: 18px;
+}
+
+#div-apresentacao .redessociais a {
+    text-align: center;
+    transition: 0.3s;
+    color:white;
+    text-decoration: none;
+    font-size: 20pt;
+}
+
+#div-apresentacao .redessociais a i {
+    transition: font-size 0.1s;
+    -webkit-transition: font-size 0.1s;
+}
+
+#div-apresentacao .redessociais a i:hover{
+    font-size: 27pt;
+}
+
+.bg-azul-3 {
+    background-color: #0176F6;
+}
+
+.color-azul-3{
+    color: #0176F6;
+}
+
+.bg-azul-1 {
+    background-color: #76B6FD;
+}
+
+.bg-azul-2 {
+    background-color: #1983F7;
+}
+
+.bg-verde {
+    background-color: #4FE476;
+}
+
+.bg-transparent {
+    background: transparent;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.bg-translucent-white-08 {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.bg-translucent-azul-3-08 {
+    background-color: rgba(1, 118, 246, 0.8);
+}
+
+.bg-translucent-black-025 {
+    background-color: rgba(0,0,0,0.25);
+}
+
+.color-white {
+    color: white;
+}
