@@ -1,25 +1,111 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <title>Home - Gabriel Soares</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <div id="logo-header" class="h1 text-center">
-      <span class="font-weight-light">{gabriel</span><span class="font-weight-bold">soares</span><span class="font-weight-light">}</span>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title>Gabriel Soares</title>
+
+  <style>
+    #section-home {
+      background-image: url("img.jpg");
+      height: 100vh;
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+    #div-apresentacao {
+      position: absolute;
+      bottom: 0px;
+      right: 3%;
+      font-size: 18px;
+    }
+
+    .bg-azul-3 {
+      background-color: #0176F6;
+    }
+
+    .color-azul-3{
+      color: #0176F6;
+    }
+
+    .bg-azul-1 {
+      background-color: #76B6FD;
+    }
+
+    .bg-azul-2 {
+      background-color: #1983F7;
+    }
+
+    .backgroundAcentuado {
+      background-color: #4FE476;
+    }
+
+    .bg-transparent {
+      background: transparent;
+    }
+
+    .bg-white {
+      background-color: white;
+    }
+
+    .color-white {
+      color: white;
+    }
+  </style>
+</head>
+
+<body onscroll="">
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <span class="font-weight-light">gabriel</span><span class="font-weight-bold">soares</span><span
+          class="font-weight-light"></span>
+      </a>
+  
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">
+              Home
+            </a>
+          </li>
+          
+          </li>
+        </ul>
+      </div>
     </div>
+  </nav>
+  <section id="section-home">
+    <div id="div-apresentacao" class="bg-white inline d-inline-block p-4">
+      <span class="font-weight-light">Olá!</span>
+      <div class="font-weight-bold h1">
+        <span class="font-weight-bold">Eu sou</span>
+        <span class="color-azul-3">Gabriel Soares</span>
+      </div>
+      <span class="font-weight-light">Programador, estudante e entusiasta da tecnologia!</span>
+    </div>
+  </section>
 
-    <div class="h3 font-weight-light">O site está em desenvolvimento! Em breve estará disponível!</div>
-    <div>Contate-me enviando um email para contato@gabrielsoares.me</div>
+  <section id="section-sobre">
+    <div class="display-1">O site, está em desenvolvimento. Estará pronto em breve!</div>
+  </section>
 
-    <!-- JavaScript (Opcional) -->
-    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
-    <script src="js/jquery-3.3.1.slim.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-  </body>
+
+  <!-- JavaScript (Opcional) -->
+  <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+  <script src="js/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
 </html>
