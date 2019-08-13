@@ -12,7 +12,7 @@
 
 </head>
 
-<body onscroll="flutuarNavBar()">
+<body>
   <nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top">
     <div class="container">
       <a class="navbar-brand" href="#">
@@ -28,12 +28,15 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="#home-section">
               Home
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Sobre</a>
+            <a class="nav-link" href="#sobre-section">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Habilidades</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Projetos</a>
@@ -48,11 +51,10 @@
       </div>
     </div>
   </nav>
-  <section id="section-home" class="full-fixed-background">
-    
+  <section id="home-section" class="full-fixed-background">
     <div id="div-apresentacao" class="d-inline-block">
-      <div class="bg-translucent-azul-3-08 color-white px-3 py-2 redessociais">
-        <a href="https://www.instagram.com/eu.gabrielsoares/ " class="px-2 ">
+      <div id="div-social" class="bg-translucent-azul-3-08 color-white px-3 py-2 redessociais">
+        <a aria-label="Instagram" href="https://www.instagram.com/eu.gabrielsoares/ " class="px-2 ">
           <i class="fab fa-instagram"></i>
         </a>
         <a href="https://github.com/gabrielsoaresdev/" class="px-2 ">
@@ -74,19 +76,48 @@
     </div>
   </section>
 
+  <section id="sobre-section" class="container">
+    <div class="row">
+      <div class="col-sm">
+        <figure class="p-1">
+          <img id="foto-minha" class="border-rounded rounded-circle w-100" src="./img/perfil-gabriel-soares-1.png"/>
+          <figcaption>Fotografia de Gabriel Soares da Silva Santos</figcaption>
+        </figure>
+      </div>
+      <div class="col-lg">
+        <article class="text-justify">
+          <h1 class="font-weight-bold color-azul-3">Quem sou eu?</h1>
+          <p>Sou apaixonado por tecnologia de forma geral. Sempre busco estar atualizado em relação às novidades do
+          mercado. Possuo experiência no desenvolvimento de sites, aplicações desktops e nativas para android.</p>
+          
+          <p>Sempre procuro estar presente em ações que, além de me agregar aprendizados, possam trazer benefícios para a comunidade
+          em que vivo, como ações de extensão e pesquisa.</p>
+
+          <p>Atualmente, estou me formando técnico em informática pelo Instituto Federal de Educação, Ciência e Tecnologia de Alagoas
+          - Campus Arapiraca e pretendo cursar uma graduação na área.</p>
+          <a class="btn bg-verde font-weight-bold color-white float-left" href="" hidden>Ver mais detalhes!</a>
+
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center">
+    Contate: contato@gabrielsoares.me
+  </footer>
 
   <!-- JavaScript (Opcional) -->
   <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
   <script src="js/jquery-3.3.1.slim.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  
+  <!-- Change Color On Scroll -->
+  <script>
+    $(window).scroll(function (){
+      $('#navbar').toggleClass('bg-white', $(this).scrollTop() > $(window).height() - ($("#div-apresentacao").height() + $(navbar).height()));
+    });
+  </script>
+
 </body>
-
 </html>
-
-<script>
-  function flutuarNavBar() {
-    $(navbar).addClass("fixed-top");
-    $(navbar).addClass("bg-white");
-  }
-</script>
