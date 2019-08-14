@@ -1,5 +1,5 @@
-#section-home {
-    background-image: url("../img.jpg");
+#home-section {
+    background-image: url("../img/gabriel-soares-apresentacao-capa.jpg");
 }
 
 .full-fixed-background {
@@ -23,7 +23,7 @@
     transition: 0.3s;
     color:white;
     text-decoration: none;
-    font-size: 20pt;
+    font-size: 15pt;
 }
 
 #div-apresentacao .redessociais a i {
@@ -32,7 +32,7 @@
 }
 
 #div-apresentacao .redessociais a i:hover{
-    font-size: 27pt;
+    font-size: 20pt;
 }
 
 .bg-azul-3 {
@@ -65,6 +65,10 @@
 
 .bg-translucent-white-08 {
     background-color: rgba(255, 255, 255, 0.8);
+}
+
+#navbar {
+    transition: 0.5s;
 }
 
 .bg-translucent-azul-3-08 {
