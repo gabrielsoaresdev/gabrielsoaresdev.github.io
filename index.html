@@ -51,6 +51,7 @@
       </div>
     </div>
   </nav>
+
   <section id="home-section" class="full-fixed-background">
     <div id="div-apresentacao" class="d-inline-block">
       <div id="div-social" class="bg-translucent-azul-3-08 color-white px-3 py-2 redessociais">
@@ -76,29 +77,31 @@
     </div>
   </section>
 
-  <section id="sobre-section" class="container">
+  <section id="sobre-section" class="py-5 container">
     <div class="row">
-      <div class="col-sm">
-        <figure class="p-1">
-          <img id="foto-minha" class="border-rounded rounded-circle w-100" src="./img/perfil-gabriel-soares-1.png"/>
-          <figcaption>Fotografia de Gabriel Soares da Silva Santos</figcaption>
-        </figure>
-      </div>
-      <div class="col-lg">
-        <article class="text-justify">
-          <h1 class="font-weight-bold color-azul-3">Quem sou eu?</h1>
-          <p>Sou apaixonado por tecnologia de forma geral. Sempre busco estar atualizado em relação às novidades do
-          mercado. Possuo experiência no desenvolvimento de sites, aplicações desktops e nativas para android.</p>
-          
-          <p>Sempre procuro estar presente em ações que, além de me agregar aprendizados, possam trazer benefícios para a comunidade
-          em que vivo, como ações de extensão e pesquisa.</p>
+      <figure class="col-sm col-lg-4" id="foto-perfil-sobre">
+        <img class="border-rounded rounded-circle w-100" src="./img/perfil-gabriel-soares-1.png" />
+        <figcaption hidden>
+          Fotografia de Gabriel Soares da Silva Santos
+        </figcaption>
+      </figure>
 
-          <p>Atualmente, estou me formando técnico em informática pelo Instituto Federal de Educação, Ciência e Tecnologia de Alagoas
-          - Campus Arapiraca e pretendo cursar uma graduação na área.</p>
-          <a class="btn bg-verde font-weight-bold color-white float-left" href="" hidden>Ver mais detalhes!</a>
-
-        </article>
-      </div>
+      <article id="article-about" class="text-justify col-sm">
+        <h1 class="font-weight-bold color-azul-3">Quem sou eu?</h1>
+        <p>
+          Gabriel Soares é programador, estudante, pesquisador, apaixonado por tecnologia, que busca sempre estar atualizado em relação às novidades de forma geral.
+        </p>
+    
+        <p>
+          Desde cedo manteve-se engajado com a comunidade escolar, participando do grêmio livre estudantil de sua escola (2013 - 2015) e de comissões com o objetivo de disseminar práticas sustentáveis no bairro.
+        </p>
+    
+        <p>
+          Atualmente, é membro do Conselho Superior e do Conselho de Campus (Arapiraca) do Instituto Federal de Educação, Ciência
+          e Tecnologia de Alagoas - Campus Arapiraca e está se formando técnico em Informática pela mesma instituição, na qual teve a oportunidade de desenvolver como bolsista projetos de pesquisa e extensão.
+        </p>
+        <a class="btn bg-verde font-weight-bold color-white float-left" href="" hidden>Ver mais detalhes!</a>
+      </article>
     </div>
   </section>
 
@@ -119,5 +122,9 @@
     });
   </script>
 
+  <!--Ajusta tamnanho da imagem para tamanho do texto-->
+  <script>
+    //$("#foto-perfil-sobre img").height($("#article-about").height());
+  </script>
 </body>
 </html>
