@@ -18,7 +18,7 @@
     font-size: 18px;
 }
 
-#div-apresentacao .redessociais a {
+.redessociais a {
     text-align: center;
     transition: 0.3s;
     color:white;
@@ -26,12 +26,12 @@
     font-size: 15pt;
 }
 
-#div-apresentacao .redessociais a i {
+.redessociais a i {
     transition: font-size 0.1s;
     -webkit-transition: font-size 0.1s;
 }
 
-#div-apresentacao .redessociais a i:hover{
+.redessociais a i:hover{
     font-size: 20pt;
 }
 
