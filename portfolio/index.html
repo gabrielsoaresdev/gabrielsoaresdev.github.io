@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="https://kit.fontawesome.com/eb5ee97657.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/index-style.css">
+    <title>Gabriel Soares</title>
+
+</head>
+
+
+<body>
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top ">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span class="font-weight-light">gabriel</span><span class="font-weight-bold">soares</span><span
+                    class="font-weight-light"></span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="">
+                            Portfólio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre-section">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" hidden>Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" hidden>Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" hidden>Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" hidden>Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="d-block w-100 bg-success" alt="First slide">
+                    Slide 1
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-block w-100 bg-warning" alt="Second slide">
+                    Slide 2
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-block w-100 bg-dark" alt="Third slide">
+                    Slide 3
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <footer class="text-center bg-dark color-white">
+        Gabriel Soares &copy 2019
+    </footer>
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="../js/jquery-3.3.1.slim.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    
+    <!-- Change Color On Scroll -->
+    <script>
+        $(window).scroll(function () {
+            $('#navbar').toggleClass('bg-white', $(this).scrollTop() > $(window).height() - ($("#div-apresentacao").height() + $(navbar).height()));
+        });
+    </script>
+
+</body>
+
+</html>
